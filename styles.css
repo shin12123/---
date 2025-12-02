@@ -458,7 +458,136 @@ body {
     margin-bottom: 20px;
     color: #222;
 }
+/* Стили для информационного блока */
+.info-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+}
 
+.info-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-content h3 {
+    color: #1e88e5;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.info-content p {
+    line-height: 1.7;
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info-block {
+    background-color: #f5f7fa;
+    border: 2px solid #e3f2fd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.contact-info-block::before {
+    content: "📞";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: #1e88e5;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.contact-info-block p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contact-info-block p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info-block strong {
+    color: #1e88e5;
+    font-weight: 600;
+}
+
+.info-content p:last-child {
+    font-style: italic;
+    color: #666;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #1e88e5;
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .info-section {
+        padding: 40px 15px;
+    }
+    
+    .info-content {
+        padding: 25px;
+    }
+    
+    .info-content h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info-block {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .contact-info-block::before {
+        top: -12px;
+        left: 15px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .contact-info-block p {
+        font-size: 14px;
+    }
+    
+    .info-content p:last-child {
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-content h3 {
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .contact-info-block {
+        padding: 15px;
+    }
+    
+    .info-content p {
+        font-size: 15px;
+    }
+}
 .about-text p {
     margin-bottom: 15px;
     line-height: 1.6;
